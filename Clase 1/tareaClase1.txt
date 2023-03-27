@@ -1,0 +1,18 @@
+var auto
+auto = "Corolla"
+console.log(auto)
+auto = "308"
+console.log(auto)
+auto = "C4"
+console.log(auto)
+--------------------------------
+var nombre,apellido
+nombre = "Facundo", apellido = "Yoris"
+console.log(nombre+ " " + apellido)
+VM1401:7 Facundo Yoris
+---------------------------
+var fruta = "Naranja"
+var tipoVarFruta = typeof(fruta)
+console.log(tipoVarFruta)
+VM1586:1 string
+-----------------------------

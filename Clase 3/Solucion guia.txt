@@ -1,0 +1,77 @@
+var x= "Facundo";
+function tipoVariable(x){
+    console.log(typeof(x));
+}
+tipoVariable(x); /LLamada a la funcion
+------------------------------------------
+function resta(	x=(prompt("Ingrese el primer número")),
+				y=(prompt("Ingrese el segundo número"))){
+    alert(x-y);
+}
+------------------------------------------
+function intercambiar(a=prompt(),b=prompt()){
+    var aux=a;
+    a=b;
+    b=aux;
+    console.log(a);
+    console.log(b);
+}
+------------------------------------------
+function cuadrado(lado=prompt()){
+    var x = lado*lado;
+    console.log("El área del cuadrado es: " + x);
+    x = lado * 4;
+    console.log("El perímetro del cuadrado es: " + x);
+}
+------------------------------------------
+function conversion(F=prompt()){
+    var C = (F-32)*(5/9);
+    console.log(C);
+}
+------------------------------------------
+function factorial (n=prompt()){
+    if(n==0){
+        return 1
+    }else {
+        n * factorial(n-1);
+    }
+} 
+// Quise hacer el factorial de un número de forma recursiva pero no se como mostrarlo por pantalla. 
+------------------------------------------
+function palindromo(x=prompt()){
+    var bandera=1;
+    var i=0,j=(x.length)-1;
+    while(i<j){
+        if(x[i]!=x[j]){
+            bandera=0;
+        }
+        i++;
+        j--;
+    }
+    if(bandera==1){
+        console.log(x + " es una palabra palíndrome");
+    } else {
+        console.log(x + " no es una palabra palíndrome");
+    }
+}
+------------------------------------------
+var cad = prompt();
+console.log(cad)
+'FACUNDO'
+cad.toLocaleLowerCase()
+'facundo'
+var cad2 = prompt()
+console.log(cad2)
+'facu'
+cad2.toLocaleUpperCase();
+'FACU'
+------------------------------------------
+function calificaciones(x=prompt()){
+    if(x>=0 && x<=3){
+        console.log("Muy deficiente");
+    } else if(x>3 && x<=5){
+        console.log("Insuficiente");
+    } else if(x>5 && x<=6){
+        console.log("Suficiente");
+    }
+}

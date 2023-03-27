@@ -1,0 +1,7 @@
+parseInt()
+parseFloat()
+prompt()
+consele.log()
+function()
+alert()
+Hay algo de un boolean que iba a explciar pero no explico.

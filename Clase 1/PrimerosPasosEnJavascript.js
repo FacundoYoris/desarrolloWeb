@@ -1,0 +1,2 @@
+var auto;
+auto = "Corolla";
